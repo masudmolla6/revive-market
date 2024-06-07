@@ -41,6 +41,9 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
+                <Link to="/products">Products</Link>
+              </li>
+              <li>
                 {user ? (
                   <button onClick={handleLogOut}>logOut</button>
                 ) : (
@@ -57,6 +60,9 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
+              <Link to="/products">Products</Link>
+            </li>
+            <li>
               {user ? (
                 <button onClick={handleLogOut}>LogOut</button>
               ) : (
@@ -66,7 +72,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <Link to="cart" className='btn'>Cart</Link>
         </div>
       </div>
     );
